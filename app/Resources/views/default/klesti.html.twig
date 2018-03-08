@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+
+
+
+{% block body %}
+
+    {{ dump() }}
+
+    <ul>
+        {% for string in data %}
+
+            <li>{{ string }}</li>
+
+        {% endfor %}
+    </ul>
+
+{% endblock %}

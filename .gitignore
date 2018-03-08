@@ -1,7 +1,7 @@
 /.web-server-pid
 
+# Testing
 **/.idea/workspace.xml
-
 **/.idea/tasks.xml
 
 /app/config/parameters.yml
