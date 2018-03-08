@@ -25,14 +25,26 @@ class DefaultController extends Controller
     /**
      * @Route("/login", name="login")
      */
-    public function test(){
-
+    public function loginAction(){
 
         $data = array( "klesti", "deni", "testing");
 
         return $this->render('default/klesti.html.twig', [
             "data" => $data
         ]);
+    }
 
+    /**
+     * @Route("/test", name="test")
+     */
+    public function testAction(){
+
+        $data = array( "klesti", "deni", "testing");
+        $test = array(1, 2, 3);
+
+        return $this->render('default/test.html.twig', [
+            'data' => $data,
+            'test' => $test
+        ]);
     }
 }
